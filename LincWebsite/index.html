@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Log into North Carolina</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<style>
+#thumbs{
+	padding-top:50px;
+}
+#selectDiv{
+	padding-top:50px;
+}
+
+#countySelect{
+	width:50%;
+}
+
+#dropdown-restrict{
+	max-height: 200px;
+    overflow: auto;
+}
+
+</style>
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#"><img src="img/logo2.png"></img></a>
+					
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<span class="badge">1300 DATASETS AVAILABLE</span>
+						</li>
+						<li >
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="" data-target="#aboutUsModal" data-toggle="modal">ABOUT US</a>
+						</li>
+						<li>
+							<a href="" data-target="#helpModal" data-toggle="modal">HELP</a>
+						</li>
+						<li class="dropdown">
+		                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONTACT SDC AFFILIATES<b class="caret"></b></a>
+		                  <ul class="dropdown-menu" id="dropdown-restrict">
+							<li class="divider"></li>
+		                    <li class="dropdown-header">A-C</li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Alexander</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Avery</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Beaufort</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Bertie</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Caldwell</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Camden</a></li>
+
+		                    <li class="divider"></li>
+		                    <li class="dropdown-header">D-F</li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Dare</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Davidson</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">EdgeCombe</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Forsyth</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Franklin</a></li>
+
+							<li class="divider"></li>
+		                    <li class="dropdown-header">G-J</li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Gaston</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Gates</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Henderson</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Hyde</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Jackson</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Jones</a></li>
+
+							<li class="divider"></li>
+		                    <li class="dropdown-header">K-N</li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Lee</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Lincoln</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Madison</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Martin</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Nash</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">New Hanover</a></li>
+
+							<li class="divider"></li>
+		                    <li class="dropdown-header">O-S</li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Onslow</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Orange</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Pit</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Polk</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Randolph</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Rutherford</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Scotland</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Stanley</a></li>
+
+							<li class="divider"></li>
+		                    <li class="dropdown-header">T-W</li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Tyrell</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Transylvania</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Washington</a></li>
+							<li><a data-target="#alexanderModal" data-toggle="modal">Wayne</a></li>
+
+
+							<li class="divider"></li>
+		                    <li class="dropdown-header">X-Z</li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Yadkin</a></li>
+		                    <li><a data-target="#alexanderModal" data-toggle="modal">Yancy</a></li>
+
+
+		                  </ul>
+		                </li>
+						
+							 <li class="dropdown">
+				                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">NC DATA SERVICE PUBLIC WEBSITES<b class="caret"></b></a>
+				                  <ul class="dropdown-menu">
+				                    <li><a href="#">LINC- Log into North Carolina</a></li>
+				                    <li><a href="http://www.osbm.state.nc.us/ncosbm/facts_and_figures/socioeconomic_data/census_lookup.shtm" target="_blank">Census Lookup - 2000 Census</a></li>
+				                    <li><a href="http://www.osbm.state.nc.us/ncosbm/facts_and_figures/socioeconomic_data/census_home.shtm" target="_blank">Census Home - All Census Data</a></li>
+									<li><a href="http://www.osbm.state.nc.us/ncosbm/facts_and_figures/socioeconomic_data/population_estimates.shtm" target="_blank">State Demographics - Estimates/Projections</a></li>
+
+									<li><a href="http://www.osbm.state.nc.us/ncosbm/facts_and_figures/state_data_center.shtm" target="_blank">State Data Center - Directory Info</a></li>
+
+				                  </ul>
+				                </li>
+						
+						
+					</ul>
+					
+					
+					
+					
+				</div>
+				
+			</nav>
+			<div class="carousel slide" id="carousel-105400">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-105400">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-105400">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-105400" class="active">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img alt="" src="img/heat1.jpg" height="500" width="1200">
+						<div class="carousel-caption">
+							<h2>
+								ENERGY UTILIZATION BUBBLE
+							</h2>
+							<p class="lead">
+								The distribution of energy sources for heating houses across 19 counties in 2010.
+							</p>
+								<a class="btn btn-large btn-default" href="userstory2/index.html">Read More</a>
+						</div>
+					</div>
+					<div class="item">
+						<img alt="" src="img/popu.jpg" height="500" width="1200">
+						<div class="carousel-caption">
+							<h2>
+								NC POPULATION PYRAMID
+							</h2>
+							<p class="lead">
+							The distribution of age groups in North Carolina over the last 150 years.
+							</p>
+							<a class="btn btn-large btn-default" href="userstory1/iframe.html">Read More</a>
+						</div>
+					</div>
+				
+					<div class="item ">
+						<img alt="" src="img/farmbw.jpg" height="500" width="1200">
+						<div class="carousel-caption">
+							<h2>
+								FARMLAND MAP
+							</h2>
+							<p class="lead">
+							Distribution of farms across North Carolina over the last 10 years.
+							</p>
+								<a class="btn btn-large btn-default" href="userstory1/iframe.html">Read More</a>
+						</div>
+					</div>
+				</div> <a class="left carousel-control" href="#carousel-105400" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-105400" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		
+			</div>
+			<a href="visualization/templates/ncdatalinc/page2.html">
+			<div class="row" id="thumbs">
+				
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/educationbw.jpg" width="130" height="130" >
+						<div class="caption">
+							<center><h3>
+								EDUCATION
+							</h3></center>
+						
+						
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/socialservicesbw.png" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								SOCIAL SERVICES
+							</h3></center>
+							
+						
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/agriculturebw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								AGRICULTURE
+							</h3></center>
+
+						</div>
+					</div>
+				</div>
+				</a>
+			</div>
+			
+			<a href="visualization/templates/ncdatalinc/page2.html">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/lawbw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								LAW ENFORCEMENT
+							</h3></center>
+						
+							
+						</div>
+					</div>
+				</div>
+				</a>
+
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/businessbw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								BUSINESS
+							</h3></center>
+							
+							
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/energybw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								ENERGY
+							</h3></center>
+						
+						
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/environmentbw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								ENVIRONMENT
+							</h3></center>
+						
+							
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/governmentbw.png" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								GOVERNMENT
+							</h3></center>
+						
+							
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/healthcarebw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								HEALTHCARE
+							</h3></center>
+						
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/industrybw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								INDUSTRY
+							</h3></center>
+						
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/populationbw.jpg" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								POPULATION
+							</h3></center>
+						
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				<a href="visualization/templates/ncdatalinc/page2.html">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img alt="300x200" src="tiles/bw/transportationbw.png" width="130" height="130">
+						<div class="caption">
+							<center><h3>
+								TRANSPORTATION
+							</h3></center>
+						
+						</div>
+					</div>
+				</div>
+				</a>
+				
+				
+				
+				
+			</div>
+			<h3>
+				Interesting Facts
+			</h3>
+			<i>
+			<blockquote>
+			
+				<p>
+					America’s oil and natural gas industry supports 9.8 million jobs throughout the economy and 7.1 percent of GDP.  
+				</p>
+				<span class="badge">Energy</span>
+				
+				<a class="btn btn-large btn-default" href="userstory2/index.html#blockquotes">Find More ...</a>
+				<p align="right">
+					<small>NC Energy Forum
+					</small>	
+				</p>
+			</blockquote>
+		
+			<blockquote>
+				<p>
+				The United States Census Bureau, as of July 1, 2009, estimated North Carolina's population at 9,380,884 which represents an increase of 1,340,334, or 16.7%, since the last census in 2000.
+				</p>
+				<span class="badge">Population</span>
+				<a class="btn btn-large btn-default" href="userstory1/iframe.html#populationStories">Find More ...</a>
+			
+			<p align="right">
+					<small>Wikipedia
+						
+						 <cite>Encyclopedia</cite>
+						
+					</small>
+			</p>
+			</blockquote>
+			
+			
+			<blockquote>
+				<p>
+				The N.C. Department of Transportation has an annual operating budget of over $4 billion. These monies come from three primary sources: the Highway Fund, the Highway Trust Fund, and federal funds.
+				</p>
+				<span class="badge">Transportation</span>
+				<a class="btn btn-large btn-default" href="#">Find More ...</a>
+			
+			<p align="right">
+					<small>NcDotGov
+					</small>
+			</p>
+			</blockquote>
+			
+			
+			</i>
+			
+			<!--Footer-->
+			<div class="well well-sm">
+				© 2013 Log Into North Carolina
+				 <center>
+					<a href="" data-target="#aboutUsModal" data-toggle="modal"> About Us </a> 
+					|<a href="" data-target="#helpModal" data-toggle="modal"> Help </a> 
+					| <a href="#"> Privacy Statement </a> 
+					| <a href="#"> Terms of Use</a> 
+				</center>
+			</div>
+			<!--Footer ends here-->
+			
+			
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Help Modal-->
+<!-- Modal -->
+<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">HELP</h4>
+      </div>
+      <div class="modal-body">
+       
+		<h1>Getting Started</h1>
+
+		Getting reports from LINC: <br/> <br/>
+		1.	Category Report: Choose a category from the tiles on the home page. You can find the specific data for a county from a particular year by making appropriate selections. You can select multiple counties and years as well.<br/>
+		View Graph: Choose this option if you want to view the data as a graph.<br/>
+		Tabular View: Choose this option if you want to view the data in a table. <br/><br/>
+		2.	User Stories: Click on the Read More button on a user story to get all data items related to that particular user story. <br/> <br/> 
+		3.	Interesting Facts: You can view the interesting facts about a category and can click on Read More button to get more interesting facts about that category.
+		
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--End of Help Modal-->
+
+<!-- About us Modal-->
+<!-- Modal -->
+<div class="modal fade" id="aboutUsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">LINC</h4>
+      </div>
+      <div class="modal-body">
+       	<h1>What is Log Into North Carolina (LINC)?</h1>
+
+		Log Into North Carolina is an interactive data retrieval service containing historical information for over 900 data items and a variety of geographic areas within the state.<br/><br/>
+
+		Most data are available for the state and all 100 counties. Some items are available for municipalities. Others, especially census data, may be retrieved for tracts and townships.<br/><br/>
+
+		There is a definition for each data item to give the user some understanding of what the data mean. Other metadata provide information on the source and frequency of the information.<br/><br/>
+
+		Reports may be viewed through your browser, printed, or saved as html files for loading into a spreadsheet. For example: Click in the report frame. From the file menu, choose "Save As...," and save as an html (.html) file. Open the htm file in Excel.<br/><br/>
+
+		Begin by selecting at least one geographic area in the left frame and then clicking Continue. The status bar below will reflect your choices as you proceed. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--End of About us Modal-->
+
+<!-- County Contact Modal -->
+<div class="modal fade" id="alexanderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Contact details</h4>
+      </div>
+      <div class="modal-body">
+        ALEXANDER COUNTY<br/>
+		Forsyth County Public Library<br/>
+		Mr. William H. King<br/>
+		660 West 5th Street<br/>
+		Winston-Salem, NC 27101<br/>
+		(336) 727-2220	<br/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--End of County Contact Modal-->
+
+
+
+</body>
+</html>
