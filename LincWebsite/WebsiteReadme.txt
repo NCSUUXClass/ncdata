@@ -1,0 +1,1 @@
+This is the Website for the revamped LINC (Log into North Carolina)
