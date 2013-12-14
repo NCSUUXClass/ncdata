@@ -1,0 +1,17 @@
+Important Links
+
+Website Link: http://ncsuuxclass.github.io/ncdata/LincWebsite/index.html
+
+Screencast Link: http://goo.gl/ByhBoL
+
+Github Repo Link: https://github.com/NCSUUXClass/ncdata
+
+Evaluation Report (For LINC website): http://goo.gl/htC8Mz
+
+Evaluation Report for our prototype: http://goo.gl/uU8Nrg
+
+
+(Note the below reports are made available as pdfs in the Git Repo, however this is a link to their online google doc)
+Summary Report: http://goo.gl/PUxsMa
+
+Detailed Report:  http://goo.gl/ZCqBA3
